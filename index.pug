@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Whatsapp
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/main-styles.css")
+        
+    body
+
+        -
+            let mensajes_enviados1 = []
+            let mensajes_enviados2 = []
+            let mensajes_enviados3 = []
+            let mensajes_enviados4 = []
+            let mensajes_enviados5 = []
+            let mensajes_recibidos1 = []
+            let mensajes_recibidos2 = []
+            let mensajes_recibidos3 = []
+            let mensajes_recibidos4 = []
+            let mensajes_recibidos5 = []
+            let hora = 1
+            let minuto = 25
+        .container 
+            .top-container
+                .top-bar
+                    .left-icons
+                        span.time 9:44
+                        
+                        <i class="fab fa-telegram-plane"></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-comment"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-facebook-messenger"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-amazon"></i>
+                        <i class="fas fa-sd-card"></i>
+                    .right-icons
+                        <span class="icon-vibration"></span>
+                        <span class="icon-signal_wifi_4_bar"></span>
+                        <span class="icon-signal_cellular_4_bar"></span>
+                        <span class="icon-battery_charging_full"></span>
+                        span.percentage 23%
+                .top-options 
+                    .left
+                        <span class="icon-arrow-left"></span>
+                        .user-image 
+                            img(src="https:placeimg.com/40/40", alt="")
+                        .user-data 
+                            p.name Jovana
+                            p.last-connection 9:59 PM 
+                    .right
+                        <i class="fas fa-video"></i>
+                        <span class="icon-phone"></span>
+                        <span class="icon-more_vert"></span>
+            .mid-container
+            .bottom-container
+                .left-bar
+                    <i class="fas fa-grin-alt"></i>
+                    input#main-message.main-message(type="text", onkeydown="eventon()" name="text" placeholder='Type a message')
+                    <span class="icon-attachment"></span>
+                    <i class="fas fa-camera"></i>
+                .right-bar
+                    <span class="icon-mic"></span>
+        script(src="main.js") 

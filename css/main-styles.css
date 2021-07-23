@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #eee;
+  height: 100vh; }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.mid-container {
+  height: 100%;
+  background: rebeccapurple; }
+
+.top-bar {
+  background: #0f1e25;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 13px; }
+
+.time, .left-icons i {
+  margin-right: 7px; }
+
+.right-icons span {
+  margin-left: 3px; }
+
+.top-options {
+  display: flex;
+  justify-content: space-between;
+  background: #232d36;
+  padding: 10px 0; }
+
+.left, .right {
+  display: flex;
+  align-items: center; }
+
+.icon-arrow-left {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 5px; }
+
+.user-image img {
+  display: block;
+  border-radius: 50%; }
+
+.user-data {
+  margin-left: 10px; }
+
+.user-data p {
+  margin: 2px 5px; }
+
+.name {
+  font-size: 1.4rem; }
+
+.last-connection {
+  font-weight: 400; }
+
+.right i, .right span {
+  font-size: 1.6rem;
+  margin-left: 1.5rem; }
+
+.icon-more_vert {
+  margin-right: 1rem; }
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  margin-bottom: .7rem;
+  padding: 0 .5rem; }
+
+.left-bar {
+  background: #2c373d;
+  width: 90%;
+  margin-right: 10px;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; }
+
+.left-bar i, .left-bar span {
+  font-size: 1.4rem;
+  color: #a3a7a8; }
+
+.icon-attachment {
+  margin-left: auto;
+  margin-right: 1.6rem;
+  transform: rotateZ(-75deg); }
+
+.right-bar {
+  width: 60px;
+  background: #00b09c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-message {
+  background: none;
+  font-weight: bold;
+  color: #a3a7a8;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  border: none; }
+
+.main-message::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.main-message:focus {
+  outline: none; }
+
+.left-bar .fa-grin-alt {
+  font-size: 1.5rem;
+  margin-right: 1rem; }
+
+.left-bar .message {
+  color: rgba(163, 167, 168, 0.671); }
+
+.icon-mic {
+  font-size: 1.8rem;
+  color: #fff; }
