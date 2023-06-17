@@ -1,3 +1,5 @@
+block variables 
+    include variables
 doctype html
 html(lang="en")
     head
@@ -8,13 +10,14 @@ html(lang="en")
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="css/main-styles.css")
+        script(defer src="main.js") 
         
     body
         .container 
             .top-container
                 .top-bar
                     .left-icons
-                        span.time 9:44
+                        span.time#time()
                         
                         <i class="fab fa-telegram-plane"></i>
                         <i class="fas fa-envelope"></i>
@@ -34,10 +37,10 @@ html(lang="en")
                     .left
                         <span class="icon-arrow-left"></span>
                         .user-image 
-                            img(src="https:placeimg.com/40/40", alt="")
+                            img(src="mujer.png", alt="")
                         .user-data 
                             p.name Jovana
-                            p.last-connection 9:59 PM 
+                            p.last-connection#last-connection
                     .right
                         <i class="fas fa-video"></i>
                         <span class="icon-phone"></span>
@@ -51,4 +54,3 @@ html(lang="en")
                     <i class="fas fa-camera"></i>
                 .right-bar
                     <span class="icon-mic"></span>
-        script(src="main.js") 
