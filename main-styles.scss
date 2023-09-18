@@ -50,7 +50,7 @@ body{
 .top-options{
     display: flex;
     justify-content: space-between;
-    background: #202C33;
+    background: #1F2C34;
     padding: 10px 0;
 }
 
@@ -66,6 +66,7 @@ body{
 }
 
 .user-image img{
+    width: 50px;
     display: block;
     border-radius: 50%;
 }
@@ -133,7 +134,7 @@ body{
 
 .right-bar{
     width: 60px;
-    background: rgb(0, 176, 156);
+    background: #00A984;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -185,13 +186,23 @@ body{
 }
 
 .message{
+    max-width: 375px;
+    position: relative;
     display: inline-flex;
     width: auto;
-    background: #005C4B;
-    padding: .8em 1em;
+    background: #1F2C34;
+    padding: .4em 1em;
     margin: .1em;
-    font-size: 1.2em;
-    color: rgb(226, 225, 225);
+    font-size: 1.1em;
+    color: rgb(215, 214, 214);
     border-radius: 15px;
-    text-shadow: 1px 1px 2px rgb(61, 61, 61);
+}
+
+.time-message{
+    position: absolute;
+    min-width: 70px;
+    right: 2px;
+    bottom: 4px;
+    font-size: .75em;
+    color: rgba(226, 225, 225, 0.589);
 }

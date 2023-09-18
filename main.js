@@ -9,6 +9,11 @@ text_bar.addEventListener('keydown', e => {
         new_text.textContent = text_bar.value
         message_box.appendChild(message_container)
         text_bar.value = ''
+        let time = document.createElement('span')
+        new_text.appendChild(time)
+        time.classList.add('time-message')
+        time.textContent = '10:54 PM'
+        
     }
 })
 
